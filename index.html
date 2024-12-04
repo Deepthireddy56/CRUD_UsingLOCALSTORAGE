@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <label for="name">
+      Name
+    </label>
+    <input type="text" name="name" id="name" />
+    <label for="age">
+      Age
+    </label>
+    <input type="number" name="age" id="age" />
+    <label for="designations"> Designations</label>
+    <select name="designations" id="designations">
+        <option value="MGR">Manager</option>
+        <option value="TL">Team Lead</option>
+        <option value="STM">Senior Software Engineer</option>
+        <option value="MTM">Software Engineer</option>
+        <option value="JTM">Jr. Software Engineer</option>
+      </select>
+    <button id="submit">Add Data</button>
+    <br /><br />
+    <table>
+      <thead>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Designation</th>
+        <th>Action</th>
+      </thead>
+      <tbody id="empInfo"></tbody>
+      <!-- Rows will be dynamically added here -->
+    </table>
+    <script src="js/models/nodes.js"></script>
+    <script src="js/models/designations.js"></script>
+    <script src="js/functions/index.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
